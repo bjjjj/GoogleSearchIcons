@@ -54,12 +54,12 @@
 			var div = doc.createElement("div");
 			div.id = "googleicon";
 			if(results.snapshotLength == 0){
-                setTimeout(function () {
-                googleicon(aEvent);
-                }, 100);
-             }else{
-                doc.body.appendChild(div);
-             }
+                		setTimeout(function () {
+                		googleicon(aEvent);
+                		}, 100);
+             		}else{
+        			doc.body.appendChild(div);
+             		}
 		}
 	};
 
