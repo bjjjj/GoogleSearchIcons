@@ -9,7 +9,7 @@
 	var googleicon = function (aEvent) {
         doc =  aEvent.originalTarget;
 		if (!doc || !doc.location) return;
-		if (doc.location.href.match(/^https?:\/\/.*\.google\..*\/(search|\#|webhp)?.*$/i)) {
+		if (doc.location.href.match(/^https?:\/\/.*\.google\..*\/(search|\#|.*q\=)?.*$/i)) {
 
 			// Check if already loaded  原来要注释掉了，为配合uAutoPagerize翻页
 			//if(doc.getElementById("googleicon")) return;
